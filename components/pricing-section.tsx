@@ -1,5 +1,7 @@
 'use client';
 
+import { Check, Star, Lock, CreditCard, Zap, ShieldCheck } from 'lucide-react';
+
 /* ===== Constantes de preço e checkout (fáceis de editar) ===== */
 const BASIC_PRICE = 'R$ 10,00';
 const COMPLETE_PRICE = 'R$ 24,90';
@@ -15,11 +17,11 @@ const completeFeatures = [
 ];
 
 const securityItems = [
-  ['🔒', 'Compra segura'],
-  ['💳', 'Pagamento protegido'],
-  ['⚡', 'Acesso imediato'],
-  ['✅', '7 dias de garantia'],
-];
+  [Lock, 'Compra segura'],
+  [CreditCard, 'Pagamento protegido'],
+  [Zap, 'Acesso imediato'],
+  [ShieldCheck, '7 dias de garantia'],
+] as const;
 
 function goToCheckout(url: string) {
   if (!url || url === '#') return;
@@ -62,10 +64,10 @@ export function PricingSection() {
             <ul className="mt-6 space-y-3">
               <li className="flex items-start gap-2.5">
                 <span
-                  className="mt-0.5 flex shrink-0 items-center justify-center rounded-full text-[11px] font-bold"
+                  className="mt-0.5 flex shrink-0 items-center justify-center rounded-full"
                   style={{ width: '18px', height: '18px', backgroundColor: '#EEF2F5', color: '#075F72' }}
                 >
-                  ✓
+                  <Check size={12} strokeWidth={3} aria-hidden="true" />
                 </span>
                 <span className="text-sm" style={{ color: '#16202B' }}>
                   <span className="font-bold">40</span> Mapas Visuais de Microbiologia
@@ -110,10 +112,11 @@ export function PricingSection() {
           >
             {/* Selo */}
             <div
-              className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full px-4 py-1.5 text-[11px] font-bold uppercase tracking-wide"
+              className="absolute left-1/2 top-0 flex -translate-x-1/2 -translate-y-1/2 items-center gap-1.5 whitespace-nowrap rounded-full px-4 py-1.5 text-[11px] font-bold uppercase tracking-wide"
               style={{ backgroundColor: '#D6A62E', color: '#062B45', boxShadow: '0 6px 16px rgba(214, 166, 46, 0.4)' }}
             >
-              ⭐ Mais escolhido
+              <Star size={12} strokeWidth={2.5} fill="#062B45" aria-hidden="true" />
+              Mais escolhido
             </div>
 
             <h3 className="font-grotesk text-xl sm:text-2xl" style={{ color: '#FFFFFF' }}>
@@ -150,10 +153,10 @@ export function PricingSection() {
               {completeFeatures.map((feature) => (
                 <li key={feature} className="flex items-start gap-2.5">
                   <span
-                    className="mt-0.5 flex shrink-0 items-center justify-center rounded-full text-[11px] font-bold"
+                    className="mt-0.5 flex shrink-0 items-center justify-center rounded-full"
                     style={{ width: '20px', height: '20px', backgroundColor: '#D6A62E', color: '#062B45' }}
                   >
-                    ✓
+                    <Check size={13} strokeWidth={3} aria-hidden="true" />
                   </span>
                   <span className="text-sm sm:text-base font-medium" style={{ color: '#FFFFFF' }}>
                     {feature}
@@ -218,9 +221,9 @@ export function PricingSection() {
 
         {/* Linha de segurança */}
         <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
-          {securityItems.map(([icon, label]) => (
+          {securityItems.map(([Icon, label]) => (
             <div key={label} className="flex items-center gap-1.5 text-xs sm:text-sm font-medium" style={{ color: '#43505C' }}>
-              <span aria-hidden="true">{icon}</span>
+              <Icon size={15} strokeWidth={2} style={{ color: '#075F72' }} aria-hidden="true" />
               {label}
             </div>
           ))}
