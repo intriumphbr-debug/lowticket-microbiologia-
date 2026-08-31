@@ -7,7 +7,7 @@ export function TopBar() {
   return (
     <div
       className="relative w-full animate-in fade-in duration-500"
-      style={{ backgroundColor: '#062B45' }}
+      style={{ backgroundColor: '#170B36', borderBottom: '1px solid rgba(214,166,46,0.35)' }}
     >
       <div className="py-2.5 sm:py-3">
         <div
@@ -16,7 +16,7 @@ export function TopBar() {
         >
           <span
             className="text-xs sm:text-sm font-semibold tracking-wide"
-            style={{ color: '#FAFAF8' }}
+            style={{ color: '#D6A62E' }}
           >
             <span style={{ color: '#D6A62E' }}>OFERTA ESPECIAL</span> DISPONÍVEL HOJE
           </span>
@@ -25,7 +25,7 @@ export function TopBar() {
             className="text-[11px] sm:text-xs font-bold uppercase tracking-wide rounded-full px-3 py-1 active:scale-95 transition-transform"
             style={{
               backgroundColor: '#D6A62E',
-              color: '#062B45',
+              color: '#170B36',
               border: '1px solid #D6A62E',
             }}
           >

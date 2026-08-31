@@ -44,7 +44,7 @@ export function Testimonials() {
     <section className="w-full py-16 md:py-24 lg:py-32" style={{ backgroundColor: '#FAFAF8' }}>
       <div className="mobile-content">
         <div className="flex flex-col items-center text-center gap-4 mb-12 md:mb-16">
-          <h2 className="font-grotesk text-3xl sm:text-4xl md:text-5xl leading-tight text-pretty" style={{ color: '#062B45' }}>
+          <h2 className="font-grotesk text-3xl sm:text-4xl md:text-5xl leading-tight text-pretty" style={{ color: '#2B145F' }}>
             Quem Estuda Microbiologia Também Sente a Diferença
           </h2>
           <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl" style={{ color: '#43505C' }}>
@@ -57,7 +57,7 @@ export function Testimonials() {
             <div
               key={item.name}
               className="flex flex-col gap-5 p-8 md:p-9"
-              style={{ backgroundColor: '#FFFFFF', border: '1px solid #E1E6EA', borderRadius: '20px', boxShadow: '0 8px 24px rgba(6,43,69,0.06)' }}
+              style={{ backgroundColor: '#FFFFFF', border: '1px solid #E4DEEF', borderRadius: '20px', boxShadow: '0 8px 24px rgba(43,20,95,0.07)' }}
             >
               <StarRow />
 
@@ -68,7 +68,7 @@ export function Testimonials() {
               <div className="mt-auto pt-2 flex items-center gap-3">
                 <div
                   className="relative w-11 h-11 rounded-full flex-shrink-0 overflow-hidden"
-                  style={{ border: '2px solid #075F72' }}
+                  style={{ border: '2px solid #0A6C78' }}
                 >
                   <Image
                     src={item.photo || "/placeholder.svg"}
@@ -80,7 +80,7 @@ export function Testimonials() {
                   />
                 </div>
                 <div className="flex flex-col text-left">
-                  <span className="font-semibold text-sm" style={{ color: '#062B45' }}>
+                  <span className="font-semibold text-sm" style={{ color: '#2B145F' }}>
                     {item.name}
                   </span>
                   <span className="text-xs" style={{ color: '#6B7883' }}>

@@ -31,12 +31,12 @@ function CarouselCard({ title, image, tag }: { title: string; image: string; tag
   return (
     <div
       className="relative w-full h-full rounded-2xl flex flex-col items-center justify-center gap-3 p-4"
-      style={{ backgroundColor: '#FFFFFF', border: '1.5px dashed #D6A62E', boxShadow: '0 8px 22px rgba(6, 43, 69, 0.08)' }}
+      style={{ backgroundColor: '#FFFFFF', border: '1.5px dashed #D6A62E', boxShadow: '0 8px 22px rgba(43, 20, 95, 0.08)' }}
     >
       {tag && (
         <span
           className="absolute top-3 left-3 rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide"
-          style={{ backgroundColor: '#EEF2F5', color: '#075F72', border: '1px solid rgba(7, 95, 114, 0.25)' }}
+          style={{ backgroundColor: '#EEF2F5', color: '#0A6C78', border: '1px solid rgba(10, 108, 120, 0.25)' }}
         >
           {tag}
         </span>
@@ -48,7 +48,7 @@ function CarouselCard({ title, image, tag }: { title: string; image: string; tag
       >
         +
       </span>
-      <p className="text-center font-grotesk text-sm sm:text-base leading-snug" style={{ color: '#062B45' }}>
+      <p className="text-center font-grotesk text-sm sm:text-base leading-snug" style={{ color: '#2B145F' }}>
         {title}
       </p>
       <p className="text-center text-[10px] sm:text-xs leading-snug" style={{ color: '#43505C' }}>
@@ -80,7 +80,7 @@ export function ProductCarousel({ title, subtitle, items, reverse = false }: Pro
       <div className="mobile-content">
         {/* Título e Subtítulo */}
         <div className="flex flex-col items-center text-center space-y-3 md:space-y-4 mb-12 md:mb-16">
-          <h2 className="font-grotesk text-3xl sm:text-4xl md:text-5xl leading-tight text-pretty" style={{ color: '#062B45' }}>
+          <h2 className="font-grotesk text-3xl sm:text-4xl md:text-5xl leading-tight text-pretty" style={{ color: '#2B145F' }}>
             {title}
           </h2>
           <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center max-w-2xl" style={{ color: '#43505C' }}>

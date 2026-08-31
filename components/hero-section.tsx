@@ -1,10 +1,12 @@
 'use client';
 
+import { Check } from 'lucide-react';
+
 export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
   const scrollToOffer = () => document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <section className="w-full py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden" style={{ backgroundColor: '#062B45' }}>
+    <section className="w-full py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden" style={{ background: 'linear-gradient(180deg, #2B145F 0%, #24114F 100%)' }}>
       <div className="mobile-content flex flex-col items-center">
         <div className="w-full flex flex-col items-center gap-6 sm:gap-8 md:gap-12">
           <div className="text-center">
@@ -16,10 +18,10 @@ export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
             <h1 className="font-grotesk text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight text-pretty text-center max-w-4xl" style={{ color: '#FFFFFF' }}>
               MICROBIOLOGIA <span style={{ color: '#D6A62E' }}>VISUAL</span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed text-center max-w-2xl" style={{ color: '#EAF1F4' }}>
+            <p className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed text-center max-w-2xl" style={{ color: 'rgba(255,255,255,0.92)' }}>
               +140 recursos visuais para estudar, revisar e finalmente organizar a microbiologia na cabeça
             </p>
-            <p className="text-sm sm:text-base leading-relaxed text-center max-w-2xl" style={{ color: '#A9BDCB' }}>
+            <p className="text-sm sm:text-base leading-relaxed text-center max-w-2xl" style={{ color: 'rgba(255,255,255,0.78)' }}>
               Mapas visuais, comparativos, fichas de revisão, resumos express e testes de memória para transformar assuntos cheios de nomes, classificações e processos em conteúdos muito mais fáceis de visualizar e revisar.
             </p>
           </div>
@@ -37,31 +39,31 @@ export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
               onClick={scrollToOffer}
               className="w-full sm:w-auto font-bold py-3 sm:py-4 md:py-5 px-6 sm:px-12 rounded-full text-sm sm:text-base md:text-lg active:scale-95 cta-animate"
               style={{
-                background: '#075F72',
+                background: '#0A6C78',
                 color: '#FFFFFF',
-                border: '1px solid #075F72',
-                boxShadow: '0 8px 22px rgba(7, 95, 114, 0.35)',
+                border: '1px solid #0A6C78',
+                boxShadow: '0 8px 22px rgba(10, 108, 120, 0.4)',
                 transition: 'all 200ms ease'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#08788F';
-                e.currentTarget.style.borderColor = '#08788F';
-                e.currentTarget.style.boxShadow = '0 10px 28px rgba(7, 95, 114, 0.45)';
+                e.currentTarget.style.background = '#0C818F';
+                e.currentTarget.style.borderColor = '#0C818F';
+                e.currentTarget.style.boxShadow = '0 10px 28px rgba(10, 108, 120, 0.5)';
                 e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#075F72';
-                e.currentTarget.style.borderColor = '#075F72';
-                e.currentTarget.style.boxShadow = '0 8px 22px rgba(7, 95, 114, 0.35)';
+                e.currentTarget.style.background = '#0A6C78';
+                e.currentTarget.style.borderColor = '#0A6C78';
+                e.currentTarget.style.boxShadow = '0 8px 22px rgba(10, 108, 120, 0.4)';
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
               QUERO ACESSAR O MICROBIOLOGIA VISUAL
             </button>
-            <p className="text-xs sm:text-sm text-center" style={{ color: '#A9BDCB' }}>Acesso imediato após a confirmação do pagamento.</p>
+            <p className="text-xs sm:text-sm text-center" style={{ color: 'rgba(255,255,255,0.78)' }}>Acesso imediato após a confirmação do pagamento.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-3 sm:gap-6 pt-2">
-            {['Pagamento único', 'Consulte quando precisar', 'Material 100% digital', 'Acesso imediato'].map((label) => <div key={label} className="flex items-center gap-1.5 text-xs sm:text-sm font-medium" style={{ color: '#FFFFFF' }}><span className="rounded-full flex items-center justify-center text-[10px] font-bold" style={{ backgroundColor: '#D6A62E', color: '#062B45', width: '18px', height: '18px' }}>✓</span>{label}</div>)}
+            {['Pagamento único', 'Consulte quando precisar', 'Material 100% digital', 'Acesso imediato'].map((label) => <div key={label} className="flex items-center gap-1.5 text-xs sm:text-sm font-medium" style={{ color: '#FFFFFF' }}><span className="rounded-full flex items-center justify-center" style={{ backgroundColor: '#D6A62E', color: '#2B145F', width: '18px', height: '18px' }}><Check size={11} strokeWidth={3} aria-hidden="true" /></span>{label}</div>)}
           </div>
         </div>
       </div>
@@ -86,7 +88,7 @@ function ImagePlaceholder({
         aspectRatio: ratio,
         border: `1.5px dashed ${dark ? 'rgba(214, 166, 46, 0.55)' : '#D6A62E'}`,
         backgroundColor: dark ? 'rgba(255,255,255,0.04)' : '#FFFFFF',
-        boxShadow: dark ? 'none' : '0 12px 30px rgba(6, 43, 69, 0.10)',
+        boxShadow: dark ? 'none' : '0 12px 30px rgba(43, 20, 95, 0.12)',
         padding: '20px',
       }}
     >
@@ -103,10 +105,10 @@ function ImagePlaceholder({
       >
         +
       </span>
-      <p className="font-grotesk text-sm sm:text-base" style={{ color: dark ? '#EAF1F4' : '#062B45' }}>
+      <p className="font-grotesk text-sm sm:text-base" style={{ color: dark ? 'rgba(255,255,255,0.92)' : '#2B145F' }}>
         {label}
       </p>
-      <p className="text-[11px] sm:text-xs" style={{ color: dark ? '#A9BDCB' : '#43505C' }}>
+      <p className="text-[11px] sm:text-xs" style={{ color: dark ? 'rgba(255,255,255,0.7)' : '#43505C' }}>
         Imagem em breve
       </p>
     </div>

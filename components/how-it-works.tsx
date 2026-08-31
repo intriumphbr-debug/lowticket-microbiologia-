@@ -6,13 +6,13 @@ export function HowItWorks() {
     ['4', 'FIXE', 'Revise com fichas, páginas express e coloque sua memória à prova com exercícios visuais.'],
   ];
   return (
-    <section className="w-full py-16 md:py-24 lg:py-32" style={{ backgroundColor: '#062B45' }}>
+    <section className="w-full py-16 md:py-24 lg:py-32" style={{ backgroundColor: '#321866' }}>
       <div className="mobile-content">
         <div className="flex flex-col items-center text-center gap-3 md:gap-4 mb-12 md:mb-16">
           <h2 className="font-grotesk text-3xl sm:text-4xl md:text-5xl leading-tight text-pretty" style={{ color: '#FFFFFF' }}>
             Revisar Microbiologia Pode Ser Muito Mais Simples
           </h2>
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl" style={{ color: '#A9BDCB' }}>
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl" style={{ color: 'rgba(255,255,255,0.78)' }}>
             Em quatro etapas, você encontra o assunto, entende visualmente, compara informações importantes e fixa o conteúdo.
           </p>
         </div>
@@ -25,8 +25,8 @@ export function HowItWorks() {
                 borderRadius: '20px',
                 overflow: 'hidden',
                 backgroundColor: '#FFFFFF',
-                border: '1px solid #E1E6EA',
-                boxShadow: '0 12px 30px rgba(6, 43, 69, 0.10)',
+                border: '1px solid #E4DEEF',
+                boxShadow: '0 12px 30px rgba(43, 20, 95, 0.10)',
                 padding: '28px',
                 transition: 'all 250ms ease',
               }}
@@ -41,14 +41,14 @@ export function HowItWorks() {
                 style={{
                   width: '52px',
                   height: '52px',
-                  background: 'linear-gradient(135deg, #075F72 0%, #062B45 100%)',
+                  background: 'linear-gradient(135deg, #0A6C78 0%, #2B145F 100%)',
                   color: '#FFFFFF',
-                  boxShadow: '0 6px 14px rgba(6, 43, 69, 0.25)',
+                  boxShadow: '0 6px 14px rgba(43, 20, 95, 0.25)',
                 }}
               >
                 {number}
               </div>
-              <h3 className="font-grotesk text-base sm:text-lg mb-3" style={{ color: '#062B45' }}>
+              <h3 className="font-grotesk text-base sm:text-lg mb-3" style={{ color: '#2B145F' }}>
                 {title}
               </h3>
               <p className="text-sm leading-relaxed" style={{ color: '#43505C' }}>
@@ -62,7 +62,7 @@ export function HowItWorks() {
         .how-it-works-card:hover {
           transform: translateY(-4px);
           border-color: #D6A62E;
-          box-shadow: 0 18px 38px rgba(6, 43, 69, 0.14);
+          box-shadow: 0 18px 38px rgba(43, 20, 95, 0.14);
         }
       `}</style>
     </section>
