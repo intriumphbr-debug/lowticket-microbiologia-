@@ -4,28 +4,31 @@ export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
   const scrollToOffer = () => document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <section className="w-full py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden" style={{ backgroundColor: '#003F2D' }}>
+    <section className="w-full py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden" style={{ backgroundColor: '#062B45' }}>
       <div className="mobile-content flex flex-col items-center">
         <div className="w-full flex flex-col items-center gap-6 sm:gap-8 md:gap-12">
           <div className="text-center">
-            <p className="text-xs sm:text-sm font-bold inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border" style={{ backgroundColor: '#DCF7E3', color: '#0F7A3D', borderColor: '#B7ECC4' }}>
-              🔒 COMPRA 100% SEGURA E PROTEGIDA
+            <p className="text-xs sm:text-sm font-bold inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border" style={{ backgroundColor: 'rgba(214, 166, 46, 0.12)', color: '#E7C25E', borderColor: 'rgba(214, 166, 46, 0.45)' }}>
+              COMPRA 100% SEGURA E PROTEGIDA
             </p>
           </div>
           <div className="w-full flex flex-col items-center gap-4 sm:gap-5">
-            <h1 className="font-grotesk text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-pretty text-center max-w-4xl" style={{ color: '#FFFFFF' }}>
-              <span style={{ color: '#7BE0A3' }}>80 Treinos de Goleiros Prontos</span> para Aplicar 
+            <h1 className="font-grotesk text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight text-pretty text-center max-w-4xl" style={{ color: '#FFFFFF' }}>
+              MICROBIOLOGIA <span style={{ color: '#D6A62E' }}>VISUAL</span>
             </h1>
-            <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center max-w-2xl" style={{ color: '#D5DDD8' }}>
-              Tenha treinos completos e organizados para trabalhar reflexo, quedas, posicionamento, saídas do gol, bolas aéreas, situações de 1x1, jogo com os pés e muito mais. Execução passo a passo, adaptações e diagramas visuais.
+            <p className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed text-center max-w-2xl" style={{ color: '#EAF1F4' }}>
+              +140 recursos visuais para estudar, revisar e finalmente organizar a microbiologia na cabeça
+            </p>
+            <p className="text-sm sm:text-base leading-relaxed text-center max-w-2xl" style={{ color: '#A9BDCB' }}>
+              Mapas visuais, comparativos, fichas de revisão, resumos express e testes de memória para transformar assuntos cheios de nomes, classificações e processos em conteúdos muito mais fáceis de visualizar e revisar.
             </p>
           </div>
           <div className="w-full flex justify-center py-2 sm:py-4 md:py-6 overflow-visible">
             <div className="w-full max-w-2xl flex justify-center items-center">
-              <img
-                src="/images/hero-mockup-goleiros.webp"
-                alt="Coleção completa: 80 Treinos Prontos para Goleiros e os 3 bônus — 20 Aquecimentos Específicos, 20 Treinos para 1 Goleiro e Planner de Treinos para Goleiros"
-                className="w-full h-auto max-w-md sm:max-w-lg md:max-w-2xl"
+              <ImagePlaceholder
+                label="Mockup do Microbiologia Visual"
+                ratio="4 / 3"
+                variant="dark"
               />
             </div>
           </div>
@@ -34,34 +37,78 @@ export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
               onClick={scrollToOffer}
               className="w-full sm:w-auto font-bold py-3 sm:py-4 md:py-5 px-6 sm:px-12 rounded-full text-sm sm:text-base md:text-lg active:scale-95 cta-animate"
               style={{
-                background: '#16C766',
+                background: '#075F72',
                 color: '#FFFFFF',
-                border: '1px solid #16C766',
-                boxShadow: '0 8px 22px rgba(22, 199, 102, 0.28)',
+                border: '1px solid #075F72',
+                boxShadow: '0 8px 22px rgba(7, 95, 114, 0.35)',
                 transition: 'all 200ms ease'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#0EAD55';
-                e.currentTarget.style.borderColor = '#0EAD55';
-                e.currentTarget.style.boxShadow = '0 10px 28px rgba(14, 173, 85, 0.36)';
+                e.currentTarget.style.background = '#08788F';
+                e.currentTarget.style.borderColor = '#08788F';
+                e.currentTarget.style.boxShadow = '0 10px 28px rgba(7, 95, 114, 0.45)';
                 e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#16C766';
-                e.currentTarget.style.borderColor = '#16C766';
-                e.currentTarget.style.boxShadow = '0 8px 22px rgba(22, 199, 102, 0.28)';
+                e.currentTarget.style.background = '#075F72';
+                e.currentTarget.style.borderColor = '#075F72';
+                e.currentTarget.style.boxShadow = '0 8px 22px rgba(7, 95, 114, 0.35)';
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
-              QUERO ACESSAR OS 80 TREINOS
+              QUERO ACESSAR O MICROBIOLOGIA VISUAL
             </button>
-            <p className="text-xs sm:text-sm text-center" style={{ color: '#D5DDD8' }}>Acesso imediato no seu WhatsApp ou e-mail após a confirmação do pagamento.</p>
+            <p className="text-xs sm:text-sm text-center" style={{ color: '#A9BDCB' }}>Acesso imediato após a confirmação do pagamento.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-3 sm:gap-6 pt-2">
-            {['Pagamento único', 'Consulte quando precisar', '7 dias de garantia', 'Acesso imediato'].map((label) => <div key={label} className="flex items-center gap-1.5 text-xs sm:text-sm font-medium" style={{ color: '#FFFFFF' }}><span className="rounded-full flex items-center justify-center text-white text-[10px] font-bold" style={{ backgroundColor: '#22C55E', width: '18px', height: '18px' }}>✓</span>{label}</div>)}
+            {['Pagamento único', 'Consulte quando precisar', 'Material 100% digital', 'Acesso imediato'].map((label) => <div key={label} className="flex items-center gap-1.5 text-xs sm:text-sm font-medium" style={{ color: '#FFFFFF' }}><span className="rounded-full flex items-center justify-center text-[10px] font-bold" style={{ backgroundColor: '#D6A62E', color: '#062B45', width: '18px', height: '18px' }}>✓</span>{label}</div>)}
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+function ImagePlaceholder({
+  label,
+  ratio = '4 / 3',
+  variant = 'light',
+}: {
+  label: string;
+  ratio?: string;
+  variant?: 'light' | 'dark';
+}) {
+  const dark = variant === 'dark';
+  return (
+    <div
+      className="w-full max-w-lg flex flex-col items-center justify-center gap-2 rounded-2xl text-center"
+      style={{
+        aspectRatio: ratio,
+        border: `1.5px dashed ${dark ? 'rgba(214, 166, 46, 0.55)' : '#D6A62E'}`,
+        backgroundColor: dark ? 'rgba(255,255,255,0.04)' : '#FFFFFF',
+        boxShadow: dark ? 'none' : '0 12px 30px rgba(6, 43, 69, 0.10)',
+        padding: '20px',
+      }}
+    >
+      <span
+        className="flex items-center justify-center rounded-full text-lg"
+        style={{
+          width: '46px',
+          height: '46px',
+          backgroundColor: dark ? 'rgba(214, 166, 46, 0.15)' : '#EEF2F5',
+          color: '#D6A62E',
+          border: '1px solid rgba(214, 166, 46, 0.5)',
+        }}
+        aria-hidden="true"
+      >
+        +
+      </span>
+      <p className="font-grotesk text-sm sm:text-base" style={{ color: dark ? '#EAF1F4' : '#062B45' }}>
+        {label}
+      </p>
+      <p className="text-[11px] sm:text-xs" style={{ color: dark ? '#A9BDCB' : '#43505C' }}>
+        Imagem em breve
+      </p>
+    </div>
   );
 }

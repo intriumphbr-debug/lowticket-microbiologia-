@@ -15,25 +15,25 @@ const oswald = Oswald({
 })
 
 export const metadata: Metadata = {
-  title: '80 Treinos Prontos para Goleiros | Da Iniciação às Categorias de Base',
+  title: 'Microbiologia Visual | +140 Recursos Visuais para Estudar e Revisar',
   description:
-    '80 treinos prontos para goleiros para consultar e aplicar, da iniciação às categorias de base, com adaptações por categoria e nível. Acesso imediato.',
+    'Um sistema visual de estudo e revisão de Microbiologia com até 140 recursos em 5 coleções: mapas visuais, comparativos, fichas, revisões express e testes de memória. Acesso imediato.',
   generator: 'v0.app',
 
   openGraph: {
-    title: '80 Treinos Prontos para Goleiros | Da Iniciação às Categorias de Base',
+    title: 'Microbiologia Visual | +140 Recursos Visuais para Estudar e Revisar',
     description:
-      '80 treinos prontos para goleiros para consultar e aplicar. Acesso imediato e garantia de 7 dias.',
+      'Mapas visuais, comparativos, fichas de revisão, resumos express e testes de memória para organizar a microbiologia. Acesso imediato e 7 dias de garantia.',
     type: 'website',
     locale: 'pt_BR',
-    siteName: '80 Treinos Prontos para Goleiros',
+    siteName: 'Microbiologia Visual',
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: '80 Treinos Prontos para Goleiros',
+    title: 'Microbiologia Visual',
     description:
-      '80 treinos prontos para goleiros para consultar e aplicar. Acesso imediato e garantia de 7 dias.',
+      '+140 recursos visuais para estudar, revisar e organizar a microbiologia. Acesso imediato e 7 dias de garantia.',
   },
 
   icons: {

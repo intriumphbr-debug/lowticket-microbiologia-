@@ -7,41 +7,57 @@ export function FAQ() {
 
   const faqItems = [
     {
-      q: 'Para quem os 80 treinos são indicados?',
-      a: 'O material foi desenvolvido principalmente para treinadores de goleiros, treinadores de categorias de base, professores de escolinhas e profissionais de Educação Física que trabalham com formação e treinamento de goleiros.',
+      q: 'Qual é a diferença entre o Plano Básico e o Plano Completo?',
+      a: 'Sim. O Plano Básico inclui os 40 Mapas Visuais. Já o Plano Completo libera as 5 coleções, totalizando mais de 140 recursos visuais entre mapas, comparativos, fichas, revisões express e testes de memória.',
     },
     {
-      q: 'Para quais categorias os treinos são indicados?',
-      a: 'O material reúne exercícios indicados da iniciação às categorias de base, incluindo referências para Sub-7, Sub-9, Sub-11, Sub-13, Sub-15 e Sub-17. Cada página informa as categorias e o nível mais adequados para aquele treino.',
+      q: 'O Microbiologia Visual é um produto físico?',
+      a: 'Não. Todo o material é 100% digital, para você consultar e revisar quando precisar, sem receber nada impresso pelos correios.',
     },
     {
-      q: 'Preciso de muitos equipamentos?',
-      a: 'Não. A maioria dos treinos utiliza materiais comuns no futebol, como bolas, cones e gol. Em cada página você encontra exatamente os materiais necessários.',
+      q: 'Como receberei o material?',
+      a: 'Após a confirmação do pagamento, você recebe as instruções de acesso imediatamente pelo e-mail cadastrado na compra.',
     },
     {
-      q: 'Os treinos mostram como organizar o exercício?',
-      a: 'Sim. Cada treino apresenta montagem, execução passo a passo, séries ou repetições, progressão, adaptação, correções e um diagrama visual para facilitar a aplicação.',
+      q: 'Posso acessar pelo celular?',
+      a: 'Sim. O material foi pensado para ser consultado com facilidade no celular, no tablet ou no computador, sempre que você precisar estudar ou revisar.',
     },
     {
-      q: 'Como recebo e acesso o material?',
-      a: 'Após a confirmação do pagamento, você recebe as instruções de acesso imediatamente pelo WhatsApp ou e-mail cadastrado na compra.',
+      q: 'Posso imprimir as páginas?',
+      a: 'Sim. Você pode imprimir as páginas que quiser para estudar no papel, além de utilizá-las digitalmente sempre que preferir.',
     },
     {
-      q: 'O pagamento é único?',
-      a: 'Sim. Você paga apenas uma vez e não existe mensalidade ou assinatura.',
+      q: 'O Plano Completo possui realmente mais de 140 recursos?',
+      a: 'Sim. O Plano Completo reúne as 5 coleções: 40 Mapas Visuais, 30 Não Confunda, 40 Fichas Visuais, 15 Revisões Express e 15 Teste sua Memória, totalizando mais de 140 recursos visuais.',
     },
     {
-      q: 'Como funciona a garantia de 7 dias?',
-      a: 'Você pode acessar e conhecer o material durante 7 dias. Caso não atenda às suas expectativas, poderá solicitar o reembolso dentro do prazo da garantia.',
+      q: 'Como o material é organizado?',
+      a: 'O conteúdo é dividido em 5 coleções que se complementam, permitindo encontrar o assunto, entender visualmente, comparar informações parecidas, revisar rapidamente e testar a memória.',
+    },
+    {
+      q: 'O material pode ser utilizado para revisão?',
+      a: 'Sim. Além do conteúdo completo, há páginas de Revisão Express e testes de memória pensados justamente para revisões rápidas e recuperação ativa do conteúdo.',
+    },
+    {
+      q: 'Preciso já dominar microbiologia para utilizar?',
+      a: 'Não. O material ajuda tanto quem está começando a organizar o conteúdo quanto quem já estuda e quer revisar de forma mais visual e prática.',
+    },
+    {
+      q: 'Por quanto tempo terei acesso?',
+      a: 'O pagamento é único e você poderá consultar o material sempre que precisar, conforme as condições da plataforma de pagamento.',
+    },
+    {
+      q: 'Existe garantia?',
+      a: 'Sim. Você tem 7 dias para conhecer o material. Caso não atenda às suas expectativas, poderá solicitar o reembolso dentro do prazo da garantia.',
     },
   ];
 
   return (
-    <section className="w-full py-14 px-0" style={{ backgroundColor: '#003F2D' }}>
+    <section className="w-full py-14 px-0" style={{ backgroundColor: '#FAFAF8' }}>
       <div className="mobile-content">
         <h2
           className="font-grotesk text-center uppercase"
-          style={{ color: '#FFFFFF', fontSize: '32px', fontWeight: 700, marginBottom: '28px', lineHeight: 1.2 }}
+          style={{ color: '#062B45', fontSize: '32px', fontWeight: 700, marginBottom: '28px', lineHeight: 1.2 }}
         >
           Perguntas Frequentes
         </h2>
@@ -82,7 +98,7 @@ export function FAQ() {
                   <span
                     className="transition-transform duration-200"
                     style={{
-                      color: '#003F2D',
+                      color: '#075F72',
                       fontSize: '20px',
                       fontWeight: 700,
                       flexShrink: 0,
@@ -104,14 +120,14 @@ export function FAQ() {
                 >
                   <div
                     style={{
-                      borderTop: '1px solid #EDECE6',
-                      backgroundColor: '#F6F4EF',
+                      borderTop: '1px solid #E1E6EA',
+                      backgroundColor: '#F3F6F8',
                       padding: '19px 18px',
                     }}
                   >
                     <p
                       className="text-left"
-                      style={{ color: '#333733', fontSize: '15px', lineHeight: 1.6 }}
+                      style={{ color: '#43505C', fontSize: '15px', lineHeight: 1.6 }}
                     >
                       {item.a}
                     </p>

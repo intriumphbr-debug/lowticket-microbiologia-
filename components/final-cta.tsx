@@ -1,52 +1,47 @@
 'use client';
 
 export function FinalCta() {
-  const checkoutUrl = 'https://pay.cakto.com.br/b9xciy9_1070794';
-
-  const handleCheckout = () => {
-    const params = window.location.search;
-    const separator = checkoutUrl.includes('?') ? '&' : '?';
-    window.location.href = params ? `${checkoutUrl}${separator}${params.slice(1)}` : checkoutUrl;
-  };
+  const scrollToPlans = () =>
+    document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-      <section className="w-full py-12 md:py-16 lg:py-20" style={{ backgroundColor: '#003F2D' }}>
+      <section className="w-full py-12 md:py-16 lg:py-20" style={{ backgroundColor: '#062B45' }}>
         <div className="mobile-content flex flex-col items-center gap-4">
           <div className="text-center space-y-3 mb-4 w-full">
             <h2 className="w-full font-grotesk text-2xl sm:text-3xl md:text-4xl leading-tight text-pretty" style={{ color: '#FFFFFF', boxSizing: 'border-box' }}>
-              DÊ O PRÓXIMO PASSO E TENHA 80 TREINOS DE GOLEIROS SEMPRE À MÃO
+              Pare de Depender de Anotações Espalhadas para Revisar Microbiologia
             </h2>
-            <p className="text-sm sm:text-base md:text-lg max-w-2xl" style={{ color: '#D5DDD8' }}>
-              Mais variedade para seus goleiros e menos tempo perdido montando cada treino. 
+            <p className="text-sm sm:text-base md:text-lg max-w-2xl" style={{ color: '#A9BDCB' }}>
+              Tenha mapas, comparações, fichas, revisões e testes organizados visualmente em um único material.
             </p>
           </div>
 
         <button
-          onClick={handleCheckout}
+          onClick={scrollToPlans}
           className="w-full font-bold py-3 sm:py-4 px-8 sm:px-12 rounded-full text-base sm:text-lg active:scale-95 cta-animate"
           style={{
             maxWidth: '100%',
             boxSizing: 'border-box',
-            background: '#16C766',
+            background: '#075F72',
             color: '#FFFFFF',
-            border: '1px solid #16C766',
-            boxShadow: '0 8px 22px rgba(22, 199, 102, 0.28)',
+            border: '1px solid #075F72',
+            boxShadow: '0 8px 22px rgba(7, 95, 114, 0.35)',
             transition: 'all 200ms ease'
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.background = '#0EAD55';
-            e.currentTarget.style.borderColor = '#0EAD55';
-            e.currentTarget.style.boxShadow = '0 10px 28px rgba(14, 173, 85, 0.36)';
+            e.currentTarget.style.background = '#08788F';
+            e.currentTarget.style.borderColor = '#08788F';
+            e.currentTarget.style.boxShadow = '0 10px 28px rgba(7, 95, 114, 0.45)';
             e.currentTarget.style.transform = 'translateY(-2px) scale(1.02)';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.background = '#16C766';
-            e.currentTarget.style.borderColor = '#16C766';
-            e.currentTarget.style.boxShadow = '0 8px 22px rgba(22, 199, 102, 0.28)';
+            e.currentTarget.style.background = '#075F72';
+            e.currentTarget.style.borderColor = '#075F72';
+            e.currentTarget.style.boxShadow = '0 8px 22px rgba(7, 95, 114, 0.35)';
             e.currentTarget.style.transform = 'translateY(0) scale(1)';
           }}
         >
-          QUERO ACESSAR OS 80 TREINOS
+          QUERO ACESSAR O MICROBIOLOGIA VISUAL
         </button>
       </div>
     </section>

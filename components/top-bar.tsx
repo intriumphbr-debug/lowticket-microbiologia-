@@ -1,32 +1,36 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-
 export function TopBar() {
-  const [formattedDate, setFormattedDate] = useState<string>('');
-
-  useEffect(() => {
-    const today = new Date();
-    const day = String(today.getDate()).padStart(2, '0');
-    const months = [
-      'JANEIRO', 'FEVEREIRO', 'MARÇO', 'ABRIL', 'MAIO', 'JUNHO',
-      'JULHO', 'AGOSTO', 'SETEMBRO', 'OUTUBRO', 'NOVEMBRO', 'DEZEMBRO'
-    ];
-    const month = months[today.getMonth()];
-    setFormattedDate(`${day} DE ${month}`);
-  }, []);
+  const scrollToPlans = () =>
+    document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' });
 
   return (
     <div
       className="relative w-full animate-in fade-in duration-500"
-      style={{ backgroundColor: '#7BE0A3' }}
+      style={{ backgroundColor: '#062B45' }}
     >
       <div className="py-2.5 sm:py-3">
         <div
-          className="w-full max-w-6xl mx-auto text-center text-xs sm:text-sm md:text-base font-semibold tracking-wide"
-          style={{ paddingInline: '12px', boxSizing: 'border-box', color: '#FFFFFF' }}
+          className="w-full max-w-6xl mx-auto flex items-center justify-center gap-3 flex-wrap text-center"
+          style={{ paddingInline: '12px', boxSizing: 'border-box' }}
         >
-          🎁 OFERTA ESPECIAL SOMENTE HOJE{formattedDate ? ` • ${formattedDate}` : ''}
+          <span
+            className="text-xs sm:text-sm font-semibold tracking-wide"
+            style={{ color: '#FAFAF8' }}
+          >
+            <span style={{ color: '#D6A62E' }}>OFERTA ESPECIAL</span> DISPONÍVEL HOJE
+          </span>
+          <button
+            onClick={scrollToPlans}
+            className="text-[11px] sm:text-xs font-bold uppercase tracking-wide rounded-full px-3 py-1 active:scale-95 transition-transform"
+            style={{
+              backgroundColor: '#D6A62E',
+              color: '#062B45',
+              border: '1px solid #D6A62E',
+            }}
+          >
+            Quero acessar
+          </button>
         </div>
       </div>
     </div>
