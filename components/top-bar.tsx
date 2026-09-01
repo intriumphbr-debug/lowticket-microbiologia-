@@ -19,7 +19,7 @@ export function TopBar() {
   return (
     <div
       className="relative w-full animate-in fade-in duration-500"
-      style={{ backgroundColor: '#2B145F', borderBottom: '1px solid rgba(214,166,46,0.35)' }}
+      style={{ backgroundColor: '#FFFFFF', borderBottom: '1px solid rgba(43,20,95,0.10)' }}
     >
       <div className="py-2.5 sm:py-3">
         <div
@@ -28,7 +28,7 @@ export function TopBar() {
         >
           <span
             className="text-xs sm:text-sm font-semibold tracking-wide"
-            style={{ color: '#FFFFFF' }}
+            style={{ color: '#2B145F' }}
           >
             {'\uD83C\uDF81'} OFERTA ESPECIAL SOMENTE HOJE{today ? ` \u2022 ${today}` : ''}
           </span>
