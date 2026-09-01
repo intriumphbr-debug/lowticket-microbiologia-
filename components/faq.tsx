@@ -35,6 +35,10 @@ export function FAQ() {
       a: 'Os 3 bônus complementares estão incluídos no Plano Completo. O Plano Básico inclui apenas os 40 Mapas Visuais.',
     },
     {
+      q: 'Quais assuntos de microbiologia aparecem no material?',
+      a: 'O Microbiologia Visual aborda fundamentos de microbiologia, estrutura e morfologia bacteriana, Gram, crescimento e metabolismo, bacteriologia, meios de cultura, testes bioquímicos, identificação microbiológica, virulência, toxinas, resistência antimicrobiana, micologia, virologia e diversos microrganismos importantes. Os temas aparecem distribuídos entre mapas, comparativos, fichas, revisões e testes.',
+    },
+    {
       q: 'Como o material é organizado?',
       a: 'O conteúdo é dividido em 5 coleções que se complementam, permitindo encontrar o assunto, entender visualmente, comparar informações parecidas, revisar rapidamente e testar a memória.',
     },
@@ -117,7 +121,7 @@ export function FAQ() {
                 <div
                   className="transition-all duration-200 ease-in-out"
                   style={{
-                    maxHeight: isOpen ? '400px' : '0px',
+                    maxHeight: isOpen ? '600px' : '0px',
                     opacity: isOpen ? 1 : 0,
                     overflow: 'hidden',
                   }}

@@ -6,8 +6,10 @@ import { HeroSection } from '@/components/hero-section';
 import { ProductCarousel } from '@/components/product-carousel';
 import { HowItWorks } from '@/components/how-it-works';
 import { WhatYouGet } from '@/components/what-you-get';
+import { SubjectsSection } from '@/components/subjects-section';
 import { ForWhomSection } from '@/components/for-whom-section';
 import { PricingSection } from '@/components/pricing-section';
+import { ReinforcementSection } from '@/components/reinforcement-section';
 import { BonusSection } from '@/components/bonus-section';
 import { Testimonials } from '@/components/testimonials';
 import { Guarantee } from '@/components/guarantee';
@@ -45,12 +47,31 @@ export default function Page() {
     <main className="min-h-screen" style={{ backgroundColor: '#FAFAF8' }}>
       <TopBar />
       <HeroSection onCtaClick={handleCtaClick} />
-      <ProductCarousel title="Conheça o Microbiologia Visual por Dentro" subtitle="Veja como assuntos que normalmente aparecem em textos extensos, tabelas e anotações passam a ser apresentados de maneira visual, organizada e fácil de consultar." items={carrossel1} />
+      <ProductCarousel
+        title="Conheça o Microbiologia Visual por Dentro"
+        subtitle="Você não recebe apenas páginas bonitas. O Microbiologia Visual organiza os principais assuntos de microbiologia em mapas, comparações, fichas, revisões e atividades para que seja mais fácil compreender como os conceitos se relacionam e voltar ao conteúdo quando precisar revisar."
+        note="Da estrutura bacteriana à virologia, o material percorre fundamentos, microrganismos importantes, identificação laboratorial, virulência, micologia, resistência antimicrobiana e outros temas recorrentes no estudo de microbiologia."
+        items={carrossel1}
+      />
       <HowItWorks />
       <WhatYouGet />
-      <ProductCarousel title="Do Conteúdo Completo à Revisão de Última Hora" subtitle="Estude um assunto com mais detalhes quando tiver tempo ou abra uma página rápida quando precisar lembrar dos pontos principais." items={carrossel2} reverse={true} />
+      <SubjectsSection />
+      <ProductCarousel
+        title="Do Conteúdo Completo à Revisão de Última Hora"
+        subtitle="O mesmo assunto pode aparecer de maneiras diferentes ao longo do sistema. Primeiro você entende visualmente, depois compara pontos que costumam gerar confusão, aprofunda características importantes, faz uma revisão rápida e finalmente testa o que conseguiu lembrar."
+        flowSteps={[
+          ['Mapa Visual', 'Entenda o assunto.'],
+          ['Não Confunda', 'Separe conceitos parecidos.'],
+          ['Ficha Visual', 'Memorize características importantes.'],
+          ['Revisão Express', 'Recupere rapidamente os pontos principais.'],
+          ['Teste sua Memória', 'Descubra o que realmente ficou.'],
+        ]}
+        items={carrossel2}
+        reverse={true}
+      />
       <ForWhomSection />
       <Testimonials />
+      <ReinforcementSection />
       <BonusSection />
       <div ref={offerRef}><PricingSection /></div>
       <Guarantee />

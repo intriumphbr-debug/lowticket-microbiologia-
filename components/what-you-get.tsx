@@ -1,10 +1,10 @@
 export function WhatYouGet() {
   const colecoes = [
-    ['40', 'MAPAS VISUAIS', 'Entenda estruturas, processos, classificações e relações importantes por meio de mapas ricos em elementos visuais.'],
-    ['30', 'NÃO CONFUNDA', 'Compare conceitos, organismos, testes e processos que normalmente geram dúvida.'],
-    ['40', 'FICHAS VISUAIS', 'Revise características, identificação, habitat, virulência e importância dos principais microrganismos.'],
-    ['15', 'REVISÃO EXPRESS', 'Grandes assuntos resumidos visualmente para uma revisão rápida e objetiva.'],
-    ['15', 'TESTE SUA MEMÓRIA', 'Questões, associações, verdadeiro ou falso, identificação visual e desafios para ajudar na fixação.'],
+    ['40', 'MAPAS VISUAIS', 'Estude visualmente temas como estrutura da célula bacteriana, Gram-positivas e Gram-negativas, morfologia, crescimento microbiano, nutrição, oxigênio, Staphylococcus, Streptococcus, enterobactérias, virulência, meios de cultura, micologia, virologia e outros assuntos fundamentais.', 'Entender e organizar o assunto.'],
+    ['30', 'NÃO CONFUNDA', 'Compare lado a lado conceitos e microrganismos que costumam gerar dúvida: Staphylococcus x Streptococcus, Salmonella x Shigella, exotoxina x endotoxina, esterilização x desinfecção x antissepsia, vírus DNA x RNA, leveduras x fungos filamentosos e muito mais.', 'Diferenciar conceitos parecidos.'],
+    ['40', 'FICHAS VISUAIS', 'Aprofunde e revise microrganismos específicos como Staphylococcus aureus, Streptococcus pyogenes, E. coli, Klebsiella pneumoniae, Salmonella, Pseudomonas aeruginosa, Mycobacterium tuberculosis, Candida albicans, Aspergillus fumigatus, HIV, HPV, Influenza e outros.', 'Memorizar características e pontos-chave.'],
+    ['15', 'REVISÃO EXPRESS', 'Revise grandes blocos de microbiologia em uma única página: fundamentos, estrutura bacteriana, Gram e colorações, crescimento, cocos Gram-positivos, enterobactérias, resistência antimicrobiana, meios de cultura, micologia, virologia e outros.', 'Revisar rapidamente antes de provas e estudos.'],
+    ['15', 'TESTE SUA MEMÓRIA', 'Coloque o conteúdo em prática com identificação visual, verdadeiro ou falso, associação de conceitos, tabelas para completar e desafios sobre Gram, crescimento, enterobactérias, virulência, meios de cultura, testes bioquímicos, fungos, vírus e resistência.', 'Recuperar e fixar o conteúdo estudado.'],
   ];
 
   return (
@@ -15,12 +15,12 @@ export function WhatYouGet() {
             <span style={{ color: '#0A6C78' }}>140 Recursos Visuais</span> Organizados em 5 Coleções
           </h2>
           <p className="max-w-2xl text-sm leading-relaxed sm:text-base md:text-lg" style={{ color: '#43505C' }}>
-            Um sistema completo de estudo e revisão para consultar microbiologia de diferentes maneiras.
+            Cada coleção cumpre uma função diferente no estudo, mas todas trabalham juntas para levar você do entendimento inicial à revisão e à fixação.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-          {colecoes.map(([count, title, description]) => (
+          {colecoes.map(([count, title, description, funcao]) => (
             <article
               key={title}
               className="group relative flex min-h-[220px] flex-col rounded-[18px] border bg-white p-6 shadow-[0_8px_24px_rgba(43,20,95,0.06)] transition-all duration-250 hover:-translate-y-1 hover:border-[#D6A62E] hover:shadow-[0_14px_30px_rgba(43,20,95,0.12)]"
@@ -39,7 +39,10 @@ export function WhatYouGet() {
                 <h3 className="font-grotesk text-lg leading-tight text-pretty sm:text-xl" style={{ color: '#2B145F' }}>{title}</h3>
                 <p className="mt-3 text-sm leading-relaxed" style={{ color: '#43505C' }}>{description}</p>
               </div>
-              <div className="mt-5 h-px w-12 bg-[#D6A62E] opacity-50 transition-all duration-250 group-hover:w-20 group-hover:opacity-90" />
+              <p className="mt-5 border-t pt-4 text-xs sm:text-sm" style={{ color: '#43505C', borderColor: '#EFEAF6' }}>
+                <span className="font-bold uppercase tracking-wide" style={{ color: '#0A6C78' }}>Função:</span>{' '}
+                {funcao}
+              </p>
             </article>
           ))}
         </div>

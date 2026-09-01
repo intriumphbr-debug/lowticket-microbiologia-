@@ -178,6 +178,10 @@ export function PricingSection() {
               </li>
             </ul>
 
+            <p className="mt-4 text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
+              São mais de 140 recursos cobrindo desde estrutura bacteriana e Gram até meios de cultura, testes bioquímicos, fungos, vírus e resistência antimicrobiana.
+            </p>
+
             <div
               className="mt-6 rounded-xl px-4 py-3 text-center"
               style={{ backgroundColor: 'rgba(10, 108, 120, 0.35)', border: '1px solid rgba(214, 166, 46, 0.35)' }}
@@ -189,7 +193,7 @@ export function PricingSection() {
             </div>
 
             <p className="mt-5 text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.78)' }}>
-              Tenha acesso às 5 coleções do Microbiologia Visual e receba ainda 3 bônus complementares para deixar sua revisão ainda mais completa.
+              Tenha acesso ao sistema completo com conteúdos de fundamentos, bacteriologia, identificação laboratorial, virulência, resistência antimicrobiana, micologia e virologia distribuídos em 5 coleções complementares.
             </p>
 
             <div className="mt-6 text-center">

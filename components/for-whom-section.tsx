@@ -1,10 +1,10 @@
 export function ForWhomSection() {
   const profiles = [
-    ['1', 'SÃO MUITOS NOMES PARA MEMORIZAR', 'Visualize características e relações em vez de depender apenas de texto.'],
-    ['2', 'EU SEMPRE CONFUNDO CONCEITOS PARECIDOS', 'Compare lado a lado aquilo que costuma gerar dúvida.'],
-    ['3', 'MINHAS ANOTAÇÕES ESTÃO ESPALHADAS', 'Tenha assuntos organizados visualmente em um único material.'],
-    ['4', 'ENTENDO NA HORA, MAS DEPOIS ESQUEÇO', 'Utilize revisões rápidas e exercícios de recuperação ativa.'],
-    ['5', 'QUERO ENXERGAR O ASSUNTO, NÃO APENAS LER', 'Diagramas, estruturas, comparações e recursos visuais ajudam a organizar o conteúdo.'],
+    ['1', 'SÃO MUITOS NOMES PARA MEMORIZAR', 'Use fichas e mapas para organizar características de bactérias, fungos, vírus, meios de cultura e testes sem depender apenas da memorização por texto.'],
+    ['2', 'EU SEMPRE CONFUNDO CONCEITOS PARECIDOS', 'Compare Gram+ x Gram−, Salmonella x Shigella, Staphylococcus x Streptococcus, exotoxina x endotoxina, vírus DNA x RNA e dezenas de outros pares.'],
+    ['3', 'MINHAS ANOTAÇÕES ESTÃO ESPALHADAS', 'Tenha fundamentos, bacteriologia, laboratório, micologia, virologia e resistência organizados dentro do mesmo sistema visual.'],
+    ['4', 'ENTENDO NA HORA, MAS DEPOIS ESQUEÇO', 'Volte às Revisões Express e aos Testes sua Memória para recuperar o conteúdo sem precisar reler tudo desde o início.'],
+    ['5', 'QUERO ENXERGAR O ASSUNTO, NÃO APENAS LER', 'Observe estruturas, microrganismos, meios, testes, comparações e processos representados visualmente para criar referências mais fáceis de lembrar.'],
   ];
   return (
     <section className="w-full py-16 md:py-24 lg:py-32" style={{ backgroundColor: '#24114F' }}>

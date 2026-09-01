@@ -1,10 +1,13 @@
 'use client';
 
 import { useEffect } from 'react';
+import { ArrowDown } from 'lucide-react';
 
 interface ProductCarouselProps {
   title: string;
   subtitle: string;
+  note?: string;
+  flowSteps?: Array<[string, string]>;
   items: Array<{
     image: string;
     title: string;
@@ -62,7 +65,7 @@ function CarouselCard({ title, image, tag }: { title: string; image: string; tag
   );
 }
 
-export function ProductCarousel({ title, subtitle, items, reverse = false }: ProductCarouselProps) {
+export function ProductCarousel({ title, subtitle, note, flowSteps, items, reverse = false }: ProductCarouselProps) {
   useEffect(() => {
     items.forEach((item) => {
       if (item.image) {
@@ -86,7 +89,40 @@ export function ProductCarousel({ title, subtitle, items, reverse = false }: Pro
           <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center max-w-2xl" style={{ color: '#43505C' }}>
             {subtitle}
           </p>
+          {note && (
+            <p className="text-xs sm:text-sm leading-relaxed text-center max-w-2xl" style={{ color: '#6B5B86' }}>
+              {note}
+            </p>
+          )}
         </div>
+
+        {flowSteps && (
+          <div className="mx-auto mb-12 md:mb-16 max-w-md">
+            <div className="flex flex-col gap-2">
+              {flowSteps.map(([name, desc], idx) => (
+                <div key={name} className="flex flex-col items-center gap-2">
+                  <div
+                    className="w-full rounded-2xl px-5 py-3.5 text-center"
+                    style={{
+                      background: idx % 2 === 0 ? 'linear-gradient(135deg, #2B145F 0%, #24114F 100%)' : 'linear-gradient(135deg, #0A6C78 0%, #085863 100%)',
+                      boxShadow: '0 8px 20px rgba(43, 20, 95, 0.14)',
+                    }}
+                  >
+                    <p className="font-grotesk text-sm sm:text-base font-bold uppercase tracking-wide" style={{ color: '#FFFFFF' }}>
+                      {name}
+                    </p>
+                    <p className="mt-0.5 text-xs sm:text-sm" style={{ color: 'rgba(255,255,255,0.8)' }}>
+                      {desc}
+                    </p>
+                  </div>
+                  {idx < flowSteps.length - 1 && (
+                    <ArrowDown size={18} strokeWidth={2.5} style={{ color: '#D6A62E' }} aria-hidden="true" />
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
         <style>{`
