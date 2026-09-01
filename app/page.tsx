@@ -9,7 +9,6 @@ import { WhatYouGet } from '@/components/what-you-get';
 import { SubjectsSection } from '@/components/subjects-section';
 import { ForWhomSection } from '@/components/for-whom-section';
 import { PricingSection } from '@/components/pricing-section';
-import { ReinforcementSection } from '@/components/reinforcement-section';
 import { BonusSection } from '@/components/bonus-section';
 import { Testimonials } from '@/components/testimonials';
 import { Guarantee } from '@/components/guarantee';
@@ -71,7 +70,6 @@ export default function Page() {
       />
       <ForWhomSection />
       <Testimonials />
-      <ReinforcementSection />
       <BonusSection />
       <div ref={offerRef}><PricingSection /></div>
       <Guarantee />

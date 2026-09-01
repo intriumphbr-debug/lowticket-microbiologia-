@@ -41,17 +41,17 @@ function StarRow() {
 
 export function BonusSection() {
   return (
-    <section className="w-full py-16 md:py-24 lg:py-32" style={{ backgroundColor: '#FAFAF8' }}>
+    <section className="w-full py-16 md:py-24 lg:py-32" style={{ backgroundColor: '#24114F' }}>
       <div className="mobile-content">
         {/* Cabeçalho */}
         <div className="flex flex-col items-center text-center gap-3 md:gap-4 mb-10 md:mb-14">
           <span className="font-grotesk text-xs sm:text-sm font-bold uppercase tracking-[0.2em]" style={{ color: '#D6A62E' }}>
             Exclusivo do Plano Completo
           </span>
-          <h2 className="font-grotesk text-3xl sm:text-4xl md:text-5xl leading-tight text-balance" style={{ color: '#2B145F' }}>
+          <h2 className="font-grotesk text-3xl sm:text-4xl md:text-5xl leading-tight text-balance" style={{ color: '#FFFFFF' }}>
             Receba 3 Bônus para Completar Sua Revisão
           </h2>
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl" style={{ color: '#43505C' }}>
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl" style={{ color: 'rgba(255,255,255,0.78)' }}>
             Materiais complementares para agilizar a consulta, reforçar a fixação e tornar sua revisão de microbiologia ainda mais prática.
           </p>
         </div>
@@ -124,9 +124,9 @@ export function BonusSection() {
         </div>
 
         {/* Reforço de inclusão */}
-        <p className="mt-10 text-center text-sm sm:text-base" style={{ color: '#43505C' }}>
+        <p className="mt-10 text-center text-sm sm:text-base" style={{ color: 'rgba(255,255,255,0.78)' }}>
           Os 3 bônus estão inclusos gratuitamente no{' '}
-          <span className="font-bold" style={{ color: '#2B145F' }}>Plano Completo</span>.
+          <span className="font-bold" style={{ color: '#D6A62E' }}>Plano Completo</span>.
         </p>
       </div>
 
