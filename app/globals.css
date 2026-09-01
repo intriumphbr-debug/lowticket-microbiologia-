@@ -191,11 +191,11 @@ body {
   @keyframes ctaPulse {
     0%, 100% {
       transform: scale(1);
-      box-shadow: 0 8px 22px rgba(10, 108, 120, 0.3);
+      box-shadow: 0 8px 22px rgba(22, 199, 102, 0.32);
     }
     50% {
       transform: scale(1.04);
-      box-shadow: 0 12px 28px rgba(10, 108, 120, 0.42);
+      box-shadow: 0 12px 28px rgba(22, 199, 102, 0.45);
     }
   }
 

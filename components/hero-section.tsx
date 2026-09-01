@@ -39,22 +39,22 @@ export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
               onClick={scrollToOffer}
               className="w-full sm:w-auto font-bold py-3 sm:py-4 md:py-5 px-6 sm:px-12 rounded-full text-sm sm:text-base md:text-lg active:scale-95 cta-animate"
               style={{
-                background: '#0A6C78',
-                color: '#FFFFFF',
-                border: '1px solid #0A6C78',
-                boxShadow: '0 8px 22px rgba(10, 108, 120, 0.4)',
+                background: '#16C766',
+                color: '#0A2A16',
+                border: '1px solid #16C766',
+                boxShadow: '0 8px 22px rgba(22, 199, 102, 0.4)',
                 transition: 'all 200ms ease'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#0C818F';
-                e.currentTarget.style.borderColor = '#0C818F';
-                e.currentTarget.style.boxShadow = '0 10px 28px rgba(10, 108, 120, 0.5)';
+                e.currentTarget.style.background = '#12A85A';
+                e.currentTarget.style.borderColor = '#12A85A';
+                e.currentTarget.style.boxShadow = '0 10px 28px rgba(22, 199, 102, 0.5)';
                 e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#0A6C78';
-                e.currentTarget.style.borderColor = '#0A6C78';
-                e.currentTarget.style.boxShadow = '0 8px 22px rgba(10, 108, 120, 0.4)';
+                e.currentTarget.style.background = '#16C766';
+                e.currentTarget.style.borderColor = '#16C766';
+                e.currentTarget.style.boxShadow = '0 8px 22px rgba(22, 199, 102, 0.4)';
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
             >

@@ -192,18 +192,18 @@ export function PricingSection() {
               onClick={() => goToCheckout(COMPLETE_CHECKOUT_URL)}
               className="mt-6 w-full rounded-full py-4 px-6 text-base font-bold active:scale-95 cta-animate"
               style={{
-                background: '#0A6C78',
-                color: '#FFFFFF',
-                border: '1px solid #D6A62E',
-                boxShadow: '0 10px 26px rgba(10, 108, 120, 0.45)',
+                background: '#16C766',
+                color: '#0A2A16',
+                border: '1px solid #16C766',
+                boxShadow: '0 10px 26px rgba(22, 199, 102, 0.5)',
                 transition: 'all 200ms ease',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#0C818F';
+                e.currentTarget.style.background = '#12A85A';
                 e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#0A6C78';
+                e.currentTarget.style.background = '#16C766';
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
