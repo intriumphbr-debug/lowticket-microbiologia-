@@ -125,8 +125,8 @@ export function BonusSection() {
 
         {/* Reforço de inclusão */}
         <p className="mt-10 text-center text-sm sm:text-base" style={{ color: 'rgba(255,255,255,0.78)' }}>
-          Os 3 bônus estão inclusos gratuitamente no{' '}
-          <span className="font-bold" style={{ color: '#D6A62E' }}>Plano Completo</span>.
+          {' '}
+          <span className="font-bold" style={{ color: '#D6A62E' }}></span>.
         </p>
       </div>
 
