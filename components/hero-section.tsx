@@ -14,15 +14,15 @@ export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
               COMPRA 100% SEGURA E PROTEGIDA
             </p>
           </div>
-          <div className="w-full flex flex-col items-center gap-4 sm:gap-5">
-            <h1 className="font-grotesk text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight text-pretty text-center max-w-4xl" style={{ color: '#FFFFFF' }}>
-              MICROBIOLOGIA <span style={{ color: '#D6A62E' }}>VISUAL</span>
+          <div className="w-full flex flex-col items-center gap-3 sm:gap-4">
+            <span className="font-grotesk text-xs sm:text-sm font-bold uppercase tracking-[0.2em]" style={{ color: '#D6A62E' }}>
+              Microbiologia Visual
+            </span>
+            <h1 className="font-grotesk text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-balance text-center max-w-2xl" style={{ color: '#FFFFFF' }}>
+              +140 recursos visuais de Microbiologia
             </h1>
-            <p className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed text-center max-w-2xl" style={{ color: 'rgba(255,255,255,0.92)' }}>
-              +140 recursos visuais para estudar, revisar e finalmente organizar a microbiologia na cabeça
-            </p>
-            <p className="text-sm sm:text-base leading-relaxed text-center max-w-2xl" style={{ color: 'rgba(255,255,255,0.78)' }}>
-              Mapas visuais, comparativos, fichas de revisão, resumos express e testes de memória para transformar assuntos cheios de nomes, classificações e processos em conteúdos muito mais fáceis de visualizar e revisar.
+            <p className="text-sm sm:text-base leading-relaxed text-pretty text-center max-w-md sm:max-w-lg" style={{ color: 'rgba(255,255,255,0.75)' }}>
+              Mapas visuais, comparativos, fichas de revisão, resumos express e testes de memória para estudar, revisar e entender microbiologia de forma mais visual e organizada.
             </p>
           </div>
           <div className="w-full flex justify-center py-2 sm:py-4 md:py-6 overflow-visible">
@@ -63,7 +63,7 @@ export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
             <p className="text-xs sm:text-sm text-center" style={{ color: 'rgba(255,255,255,0.78)' }}>Acesso imediato após a confirmação do pagamento.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-3 sm:gap-6 pt-2">
-            {['Pagamento único', 'Consulte quando precisar', 'Material 100% digital', 'Acesso imediato'].map((label) => <div key={label} className="flex items-center gap-1.5 text-xs sm:text-sm font-medium" style={{ color: '#FFFFFF' }}><span className="rounded-full flex items-center justify-center" style={{ backgroundColor: '#D6A62E', color: '#2B145F', width: '18px', height: '18px' }}><Check size={11} strokeWidth={3} aria-hidden="true" /></span>{label}</div>)}
+            {['Pagamento único', 'Consulte quando precisar', 'Material 100% digital', 'Acesso imediato'].map((label) => <div key={label} className="flex items-center gap-1.5 text-xs sm:text-sm font-medium" style={{ color: '#FFFFFF' }}><span className="rounded-full flex items-center justify-center" style={{ backgroundColor: '#16C766', color: '#FFFFFF', width: '18px', height: '18px' }}><Check size={11} strokeWidth={3} aria-hidden="true" /></span>{label}</div>)}
           </div>
         </div>
       </div>
