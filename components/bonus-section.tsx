@@ -131,7 +131,7 @@ export function BonusSection() {
       </div>
 
       <style>{`
-        .bonus-card:hover {
+        bonus-card:hover {
           transform: translateY(-4px);
           border-color: #D6A62E;
           box-shadow: 0 20px 42px rgba(43, 20, 95, 0.14);
