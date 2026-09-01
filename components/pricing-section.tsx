@@ -1,6 +1,6 @@
 'use client';
 
-import { Check, Star, Lock, CreditCard, Zap, ShieldCheck } from 'lucide-react';
+import { Check, Star, Lock, CreditCard, Zap, ShieldCheck, Gift } from 'lucide-react';
 
 /* ===== Constantes de preço e checkout (fáceis de editar) ===== */
 const BASIC_PRICE = 'R$ 10,00';
@@ -15,6 +15,8 @@ const completeFeatures = [
   '15 Revisões Express',
   '15 Teste sua Memória',
 ];
+
+const completeBonus = '+ 3 Bônus Exclusivos';
 
 const securityItems = [
   [Lock, 'Compra segura'],
@@ -163,6 +165,17 @@ export function PricingSection() {
                   </span>
                 </li>
               ))}
+              <li className="flex items-start gap-2.5">
+                <span
+                  className="mt-0.5 flex shrink-0 items-center justify-center rounded-full"
+                  style={{ width: '20px', height: '20px', backgroundColor: '#D6A62E', color: '#1F0F45' }}
+                >
+                  <Gift size={12} strokeWidth={2.5} aria-hidden="true" />
+                </span>
+                <span className="text-sm sm:text-base font-bold" style={{ color: '#D6A62E' }}>
+                  {completeBonus}
+                </span>
+              </li>
             </ul>
 
             <div
@@ -171,12 +184,12 @@ export function PricingSection() {
             >
               <p className="font-grotesk text-lg" style={{ color: '#D6A62E' }}>+140 RECURSOS VISUAIS</p>
               <p className="mt-1 text-xs font-semibold" style={{ color: 'rgba(255,255,255,0.92)' }}>
-                Por + R$ 14,90, leve as 5 coleções
+                + bônus exclusivos incluídos
               </p>
             </div>
 
             <p className="mt-5 text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.78)' }}>
-              Tenha todas as 5 coleções e utilize o material para entender, comparar, revisar e testar seus conhecimentos.
+              Tenha acesso às 5 coleções do Microbiologia Visual e receba ainda 3 bônus complementares para deixar sua revisão ainda mais completa.
             </p>
 
             <div className="mt-6 text-center">

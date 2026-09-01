@@ -31,6 +31,10 @@ export function FAQ() {
       a: 'Sim. O Plano Completo reúne as 5 coleções: 40 Mapas Visuais, 30 Não Confunda, 40 Fichas Visuais, 15 Revisões Express e 15 Teste sua Memória, totalizando mais de 140 recursos visuais.',
     },
     {
+      q: 'Os bônus estão incluídos em qual plano?',
+      a: 'Os 3 bônus complementares estão incluídos no Plano Completo. O Plano Básico inclui apenas os 40 Mapas Visuais.',
+    },
+    {
       q: 'Como o material é organizado?',
       a: 'O conteúdo é dividido em 5 coleções que se complementam, permitindo encontrar o assunto, entender visualmente, comparar informações parecidas, revisar rapidamente e testar a memória.',
     },

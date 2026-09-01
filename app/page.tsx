@@ -8,6 +8,7 @@ import { HowItWorks } from '@/components/how-it-works';
 import { WhatYouGet } from '@/components/what-you-get';
 import { ForWhomSection } from '@/components/for-whom-section';
 import { PricingSection } from '@/components/pricing-section';
+import { BonusSection } from '@/components/bonus-section';
 import { Testimonials } from '@/components/testimonials';
 import { Guarantee } from '@/components/guarantee';
 import { FAQ } from '@/components/faq';
@@ -50,6 +51,7 @@ export default function Page() {
       <ProductCarousel title="Do Conteúdo Completo à Revisão de Última Hora" subtitle="Estude um assunto com mais detalhes quando tiver tempo ou abra uma página rápida quando precisar lembrar dos pontos principais." items={carrossel2} reverse={true} />
       <ForWhomSection />
       <Testimonials />
+      <BonusSection />
       <div ref={offerRef}><PricingSection /></div>
       <Guarantee />
       <FAQ />

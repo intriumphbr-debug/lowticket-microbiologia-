@@ -1,6 +1,21 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+
 export function TopBar() {
+  const [today, setToday] = useState('');
+
+  useEffect(() => {
+    const formatted = new Intl.DateTimeFormat('pt-BR', {
+      day: '2-digit',
+      month: 'long',
+      timeZone: 'America/Sao_Paulo',
+    })
+      .format(new Date())
+      .toUpperCase();
+    setToday(formatted);
+  }, []);
+
   return (
     <div
       className="relative w-full animate-in fade-in duration-500"
@@ -15,7 +30,7 @@ export function TopBar() {
             className="text-xs sm:text-sm font-semibold tracking-wide"
             style={{ color: '#2B145F' }}
           >
-            OFERTA ESPECIAL DISPONÍVEL HOJE
+            {'\uD83C\uDF81'} OFERTA ESPECIAL SOMENTE HOJE{today ? ` \u2022 ${today}` : ''}
           </span>
         </div>
       </div>
