@@ -43,7 +43,7 @@ export default function Page() {
   const offerRef = useRef<HTMLDivElement>(null);
   const handleCtaClick = () => offerRef.current?.scrollIntoView({ behavior: 'smooth' });
   return (
-    <main className="min-h-screen" style={{ backgroundColor: '#FAFAF8' }}>
+    <main className="min-h-screen" style={{ backgroundColor: '#F8F8F5' }}>
       <TopBar />
       <HeroSection onCtaClick={handleCtaClick} />
       <ProductCarousel
@@ -51,6 +51,7 @@ export default function Page() {
         subtitle="Você não recebe apenas páginas bonitas. O Microbiologia Visual organiza os principais assuntos de microbiologia em mapas, comparações, fichas, revisões e atividades para que seja mais fácil compreender como os conceitos se relacionam e voltar ao conteúdo quando precisar revisar."
         note="Da estrutura bacteriana à virologia, o material percorre fundamentos, microrganismos importantes, identificação laboratorial, virulência, micologia, resistência antimicrobiana e outros temas recorrentes no estudo de microbiologia."
         items={carrossel1}
+        bg="#FFFFFF"
       />
       <HowItWorks />
       <WhatYouGet />
@@ -67,6 +68,7 @@ export default function Page() {
         ]}
         items={carrossel2}
         reverse={true}
+        bg="#F3EFF8"
       />
       <ForWhomSection />
       <Testimonials />
