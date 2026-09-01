@@ -1,9 +1,9 @@
 export function HowItWorks() {
   const steps = [
-    ['1', 'VISUALIZE', 'Encontre rapidamente o assunto que precisa estudar ou revisar.'],
-    ['2', 'ENTENDA', 'Use mapas, esquemas, estruturas e explicações visuais para compreender o conceito.'],
-    ['3', 'COMPARE', 'Separe conceitos e microrganismos parecidos com a coleção Não Confunda.'],
-    ['4', 'FIXE', 'Revise com fichas, páginas express e coloque sua memória à prova com exercícios visuais.'],
+    ['1', 'VISUALIZE', 'Veja o assunto de forma organizada, sem precisar caçar informação em vários lugares.'],
+    ['2', 'ENTENDA', 'Transforme conceitos cheios de detalhes em estruturas visuais muito mais fáceis de acompanhar.'],
+    ['3', 'COMPARE', 'Diferencie microrganismos, processos e conceitos parecidos sem misturar tudo na cabeça.'],
+    ['4', 'FIXE', 'Volte ao conteúdo de forma rápida e reforce o que ainda precisa ser lembrado.'],
   ];
   return (
     <section className="w-full py-16 md:py-24 lg:py-32" style={{ backgroundColor: '#321866' }}>
