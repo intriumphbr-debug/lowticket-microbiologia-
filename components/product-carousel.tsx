@@ -14,6 +14,7 @@ interface ProductCarouselProps {
     tag?: string;
   }>;
   reverse?: boolean;
+  dark?: boolean;
 }
 
 function CarouselCard({ title, image, tag }: { title: string; image: string; tag?: string }) {
@@ -65,7 +66,8 @@ function CarouselCard({ title, image, tag }: { title: string; image: string; tag
   );
 }
 
-export function ProductCarousel({ title, subtitle, note, flowSteps, items, reverse = false }: ProductCarouselProps) {
+export function ProductCarousel({ title, subtitle, note, flowSteps, items, reverse = false, dark = false }: ProductCarouselProps) {
+  const fadeColor = dark ? '#321866' : '#FAFAF8';
   useEffect(() => {
     items.forEach((item) => {
       if (item.image) {
@@ -79,18 +81,18 @@ export function ProductCarousel({ title, subtitle, note, flowSteps, items, rever
   const trackItems = [...items, ...items];
 
   return (
-    <section className="w-full overflow-hidden py-12 md:py-16 lg:py-20" style={{ backgroundColor: '#FAFAF8' }}>
+    <section className="w-full overflow-hidden py-12 md:py-16 lg:py-20" style={{ backgroundColor: dark ? '#321866' : '#FAFAF8' }}>
       <div className="mobile-content">
         {/* Título e Subtítulo */}
         <div className="flex flex-col items-center text-center space-y-3 md:space-y-4 mb-12 md:mb-16">
-          <h2 className="font-grotesk text-3xl sm:text-4xl md:text-5xl leading-tight text-pretty" style={{ color: '#2B145F' }}>
+          <h2 className="font-grotesk text-3xl sm:text-4xl md:text-5xl leading-tight text-pretty" style={{ color: dark ? '#FFFFFF' : '#2B145F' }}>
             {title}
           </h2>
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center max-w-2xl" style={{ color: '#43505C' }}>
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center max-w-2xl" style={{ color: dark ? 'rgba(255,255,255,0.8)' : '#43505C' }}>
             {subtitle}
           </p>
           {note && (
-            <p className="text-xs sm:text-sm leading-relaxed text-center max-w-2xl" style={{ color: '#6B5B86' }}>
+            <p className="text-xs sm:text-sm leading-relaxed text-center max-w-2xl" style={{ color: dark ? 'rgba(255,255,255,0.68)' : '#6B5B86' }}>
               {note}
             </p>
           )}
@@ -163,7 +165,7 @@ export function ProductCarousel({ title, subtitle, note, flowSteps, items, rever
         `}</style>
 
         <div className="relative w-full overflow-hidden">
-          <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 md:w-24 bg-gradient-to-r from-background to-transparent z-20 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 md:w-24 z-20 pointer-events-none" style={{ background: `linear-gradient(to right, ${fadeColor}, transparent)` }} />
           <div className={`carousel-track ${reverse ? 'backward' : 'forward'}`}>
             {trackItems.map((item, idx) => (
               <div key={idx} className="carousel-item">
@@ -171,7 +173,7 @@ export function ProductCarousel({ title, subtitle, note, flowSteps, items, rever
               </div>
             ))}
           </div>
-          <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 md:w-24 bg-gradient-to-l from-background to-transparent z-20 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 md:w-24 z-20 pointer-events-none" style={{ background: `linear-gradient(to left, ${fadeColor}, transparent)` }} />
         </div>
     </section>
   );

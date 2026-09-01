@@ -6,7 +6,7 @@ export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
   const scrollToOffer = () => document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <section className="w-full py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden" style={{ background: 'linear-gradient(180deg, #2B145F 0%, #24114F 100%)' }}>
+    <section className="w-full py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="mobile-content flex flex-col items-center">
         <div className="w-full flex flex-col items-center gap-6 sm:gap-8 md:gap-12">
           <div className="text-center">
@@ -18,10 +18,13 @@ export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
             <span className="font-grotesk text-xs sm:text-sm font-bold uppercase tracking-[0.2em]" style={{ color: '#D6A62E' }}>
               Microbiologia Visual
             </span>
-            <h1 className="font-grotesk text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-balance text-center max-w-2xl" style={{ color: '#FFFFFF' }}>
-              +140 recursos visuais de Microbiologia
+            <h1 className="font-grotesk text-4xl sm:text-5xl md:text-6xl leading-[1.15] text-balance text-center max-w-2xl" style={{ color: '#2B145F' }}>
+              <span style={{ backgroundColor: '#2B145F', color: '#FFFFFF', padding: '0 0.18em', borderRadius: '0.12em', WebkitBoxDecorationBreak: 'clone', boxDecorationBreak: 'clone' }}>+140</span>{' '}
+              recursos{' '}
+              <span style={{ backgroundColor: '#2B145F', color: '#FFFFFF', padding: '0 0.18em', borderRadius: '0.12em', WebkitBoxDecorationBreak: 'clone', boxDecorationBreak: 'clone' }}>visuais</span>{' '}
+              de Microbiologia
             </h1>
-            <p className="text-sm sm:text-base leading-relaxed text-pretty text-center max-w-md sm:max-w-lg" style={{ color: 'rgba(255,255,255,0.75)' }}>
+            <p className="text-sm sm:text-base leading-relaxed text-pretty text-center max-w-md sm:max-w-lg" style={{ color: '#24303A' }}>
               Mapas visuais, comparativos, fichas de revisão, resumos express e testes de memória para estudar, revisar e entender microbiologia de forma mais visual e organizada.
             </p>
           </div>
@@ -30,7 +33,7 @@ export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
               <ImagePlaceholder
                 label="Mockup do Microbiologia Visual"
                 ratio="4 / 3"
-                variant="dark"
+                variant="light"
               />
             </div>
           </div>
@@ -60,10 +63,10 @@ export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
             >
               QUERO ACESSAR O MICROBIOLOGIA VISUAL
             </button>
-            <p className="text-xs sm:text-sm text-center" style={{ color: 'rgba(255,255,255,0.78)' }}>Acesso imediato após a confirmação do pagamento.</p>
+            <p className="text-xs sm:text-sm text-center" style={{ color: '#24303A' }}>Acesso imediato após a confirmação do pagamento.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-3 sm:gap-6 pt-2">
-            {['Pagamento único', 'Consulte quando precisar', 'Material 100% digital', 'Acesso imediato'].map((label) => <div key={label} className="flex items-center gap-1.5 text-xs sm:text-sm font-medium" style={{ color: '#FFFFFF' }}><span className="rounded-full flex items-center justify-center" style={{ backgroundColor: '#16C766', color: '#FFFFFF', width: '18px', height: '18px' }}><Check size={11} strokeWidth={3} aria-hidden="true" /></span>{label}</div>)}
+            {['Pagamento único', 'Consulte quando precisar', 'Material 100% digital', 'Acesso imediato'].map((label) => <div key={label} className="flex items-center gap-1.5 text-xs sm:text-sm font-medium" style={{ color: '#24303A' }}><span className="rounded-full flex items-center justify-center" style={{ backgroundColor: '#16C766', color: '#FFFFFF', width: '18px', height: '18px' }}><Check size={11} strokeWidth={3} aria-hidden="true" /></span>{label}</div>)}
           </div>
         </div>
       </div>
